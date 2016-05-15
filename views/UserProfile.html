@@ -1,0 +1,82 @@
+<section>
+    <div id="left">
+        <div id="welcomeProfile">
+        </div>
+        <img id="profile_avatar" src="images/no-avatar.jpg" alt="avatar">
+        <input type="button" class="upload_avatar" value="Upload profile picture">
+        <input type="file" id="profilePhotoFileUpload">
+    </div>
+    <div id="right">
+
+        <span style="display:inline-block">
+            <label for="first_name" style="display:block">First Name</label>
+            <input type="text" id="first_name" class="k-textbox" />
+        </span>
+
+        <span style="display:inline-block">
+            <label for="last_name"  style="display:block">Last Name</label>
+            <input type="text" id="last_name" class="k-textbox" />
+        </span>
+
+        <label id ="email_label" for="email_profile"  style="display:block">Email</label>
+        <input type="text" id="email_profile" class="k-textbox" />
+
+        <span style="display:inline-block">
+            <label  id="password_label" for="password1" style="display:block">Password</label>
+            <input type="password" id="password1" class="k-textbox" />
+        </span>
+
+        <span style="display:inline-block">
+            <label for="password2"  style="display:block">Re-enter Password</label>
+            <input type="password" id="password2" class="k-textbox" />
+        </span>   
+        <label id = "select_label" for="interest_select"  style="display:block">Food Preferences</label>
+            <select id="interests_select"></select>
+
+        <div id="submit_button_profile">
+            <button id="submit_profile" class="k-button">Save Profile</button>
+        </div>    
+        <div id="user_profile_view"></div>
+    </div>
+    <h1> </h1>
+</section>
+
+
+<style>
+    #password1 {
+        width: 178px;
+    }
+    #password2 {
+        width: 178px;
+    }
+    #last_name {
+        width: 178px;
+    }
+    #first_name {
+        width: 178px;
+    }
+    #select_label {
+        margin-top: 25px;
+    }
+    #email_label {
+        margin-top: 25px;
+    }    
+    #email_profile {
+        width: 360px;
+    }
+    #password_label {
+        margin-top: 25px;
+    }   
+    #submit_button_profile {
+        margin-top: 25px;
+        margin-right: 150px;
+        float: right;
+    }
+    div#right {
+        margin-top: 60px;
+    }
+    img#profile_avatar {
+        width: 152px;
+        height: 152px;
+    }
+</style>

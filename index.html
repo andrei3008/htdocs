@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Food hub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="kendoui/styles/kendo.common.min.css" rel="stylesheet">
+        <link href="kendoui/styles/kendo.default.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.common-material.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.material.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.material.min.css" />
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="css/hover-min.css" type="text/css">
+
+
+        <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+        <script src="js/foodhub/verify.js"></script>
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <!-- start html block -->
+            <header>
+                <div class="left">
+                    <a href="index.html"><img class="logo" src="images/logo.png" title="logo" /></a>
+                </div>		
+                <!--Navigatie-->
+                <div class="right">
+                    <nav>
+                        <nav>
+                            <ul class="main-nav">
+                                <li class="menu_item" id="upcoming_events_menu_item"><a href="#">Upcoming Events</a></li>
+                                <li class="menu_item" id="past_events_menu_item"><a href="#">Past Events</a></li>
+                                <li class="menu_item" id="my_profile"><a href="#">My Profile</a></li>
+                                <li class="menu_item" id="hashtags_menu_item"><a href="#">My Interests</a></li>
+                                <li class="menu_item" id="users_menu_item"><a href="#">Users</a></li>
+                            </ul>
+                        </nav>
+                    </nav>
+                </div>
+                <div class="welcome_logout">
+                    <div id="welcome">
+                    </div>  
+                    <div id="logout">
+                        <div id="tooltip_profile"></div>
+                        <input type="button" id="logout_button" name="logout" value="LOGOUT"/>
+                    </div>    
+                </div>    
+              
+            </header>
+            <!-- Start Main Content-->
+            <main>
+
+            </main>
+            <!-- End Main Content-->
+            <!--Start Sidebar-->
+            <aside>
+                <!--End add event window-->
+                <div id="buttonContainer">
+                    <ul class="buttons-sidebar">
+
+                        <li>
+                            <input type="button" class="aside_button pure-button pure-button-active" id="add_event" value="Add event"/>
+                        </li>
+                        <li>
+                            <input type="button" class="aside_button pure-button pure-button-disabled" id="edit_event" value="Edit event"/>
+                        </li>   
+                        <li>   
+                            <input type="button" class="aside_button pure-button pure-button-disabled" id="remove_event" value="Remove event"/>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </aside>
+            <!--End Sidebar-->
+            <!--Start Footer-->
+            <footer id="footer_div">
+                <footer>
+                    <div class="footer-left">Copyright © 2016 iTEC</div>
+                    
+                    <div class="footer-social-icons">
+								<h4 class="_14">Follow us on</h4>
+								<ul class="social-icons">
+									<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+									<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+							
+							<div class="footer-right">Powered by <b>Andrei Cioc</b> &amp; <b>Alexandru Albastrin</b></div>
+                </footer>
+            </footer>
+            <!--End Footer-->
+            <!-- end html block -->
+            <!--Add/edit event window-->
+            <div id="modal_window"></div>
+
+        </div>
+
+        <script type="text/javascript" src="js/config.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="kendoui/js/kendo.all.min.js"></script>
+        <script type="text/javascript" src="js/foodhub/AddEventForm.js"></script>
+        <script type="text/javascript" src="js/foodhub/UserProfile.js"></script>
+        <script type="text/javascript" src="js/foodhub/UpcomingEventsView.js"></script>
+        <script type="text/javascript" src="js/foodhub/PastEventsView.js"></script>
+        <script type="text/javascript" src="js/foodhub/Render.js"></script>
+        <script src="js/foodhub/MainView.js"></script>
+        <script type="text/javascript" src="js/foodhub/StatusesView.js"></script>
+        <script type="text/javascript" src="js/foodhub/HashtagsView.js"></script>
+        <script type="text/javascript" src="js/foodhub/UsersView.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="https://apis.google.com/js/client:platform.js" async defer></script>             
+    </body>
+</html>

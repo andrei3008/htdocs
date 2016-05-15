@@ -1,0 +1,111 @@
+<html>
+    <head>
+
+        <link href="login.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../kendoui/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="../kendoui/styles/kendo.default.min.css" />
+        <link href="../register/register.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.common-material.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.material.min.css" />
+
+
+    </head>
+
+    <body>
+        <div class="wrap">
+            <img class='logo' src="../images/logo.png" alt="logo"/>
+            <!-- start-login_ways -->	
+            <div class="login_ways">
+                <!-- start-form -->
+                <form class="contact_form" action="#" method="post" name="contact_form">
+                    <div id="login_h1">
+                        <h1>Login</h1>
+                    </div>
+                    <ul>
+                        <li>
+                            <div id="tooltip_user">
+                                <span class="alert_icon invisible" id="user_textbox_missing"></span>
+                            </div>
+                            <input type="text" class="user_textbox" name="user" placeholder="username" required />
+                            <!--span class="form_hint">Enter a valid email</span-->
+                            <p><img src="../images/loginimages/contact.png" alt="">
+                            </p>
+
+                        </li>
+                        <li id="password_field">
+                            <div id="tooltip_password">
+                                <span class="alert_icon invisible" id="password_textbox_missing"></span>
+                            </div>    
+                            <input type="password" name="password" class="password_textbox" placeholder="password">
+                            <p><img src="../images/loginimages/lock.png" alt=""></p>
+                        </li>
+                    </ul>
+                    <input type="button" id="register" name="register" value="REGISTER"/>
+                    <input type="button" id="login" name="login" value="LOGIN"/>
+                    <!--label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember me</label>
+                    <div class="forgot">
+                        <a href="#">forgot password?</a>
+                    </div-->	
+                    <div class="clear"></div>	
+                </form>
+                <!-- end-form -->
+                <div id="window1">
+
+                </div>
+                <img class="border" src="../images/loginimages/border.png" alt="border"/>
+                <!-- start-login_with -->
+                <div class="login_with">
+                    <h2>Login with:</h2>
+                    
+<!--                    <div id="fb-root"></div>-->
+                   
+                                        <div id="fb-root" class="with_facebook"><a href="#"><img src="../images/loginimages/facebook.png" alt=""/><i>Facebook</i><div class="clear"></div></a></div>	<!--
+                                                            <div class="with_gplus"><a href="#"><img src="../images/loginimages/gplus.png" alt=""/><i>Google+</i><div class="clear"></div></a></div>
+                    --><span id="signinButton">
+                        <span
+                            class="g-signin"
+                            data-callback="signinCallback"
+                            google-signin-callback="signinCallback"
+                            data-clientid="1058145781024-35ams9jlqerk0qa3b3gq92jfitgu6v3g.apps.googleusercontent.com"
+                            data-cookiepolicy="single_host_origin"
+                            data-requestvisibleactions="http://schema.org/AddAction"
+                            data-scope="https://www.googleapis.com/auth/plus.login">
+                        </span>
+                    </span>
+                    
+                </div>	
+                <!-- end-login_with -->
+                <div class="clear"></div>	
+            </div>
+            <!-- end-login_ways -->
+        </div>
+
+<!--        <script>
+            function signinCallback(authResult) {
+                if (authResult['status']['signed_in']) {
+                    Parse.User.become("session-token-here").then(function (user) {
+                        // The current user is now set to user.
+                    }, function (error) {
+                        // The token could not be validated.
+                    });
+                } else {
+                    // Update the app to reflect a signed out user
+                    // Possible error values:
+                    //   "user_signed_out" - User is signed-out
+                    //   "access_denied" - User denied access to your app
+                    //   "immediate_failed" - Could not automatically log in the user
+                    console.log('Sign-in state: ' + authResult['error']);
+                }
+            }
+        </script>  -->
+        <script src="../js/plugins/jquery-1.11.3.js"></script>
+        <script src="../kendoui/js/kendo.all.min.js"></script>
+        <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<!--        <script src="https://apis.google.com/js/client:platform.js"></script>-->
+        <script src="login.js"></script>     
+    </body>
+
+</html>
